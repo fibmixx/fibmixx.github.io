@@ -9,25 +9,32 @@
   <meta property="og:description" content="Informatics Engineering student at FIB UPC, passionate about software engineering and game development." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0b0b0b" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,4 61,38 97,38 68,59 79,94 50,72 21,94 32,59 3,38 39,38' fill='%23e8102b'/></svg>" />
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  <link rel="apple-touch-icon" href="logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Black+Han+Sans&family=Do+Hyeon&family=Gowun+Batang:wght@700&family=Nanum+Gothic+Coding:wght@400;700&family=Playfair+Display:ital,wght@1,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Diagonal wipe used for section transitions -->
   <div class="wipe" aria-hidden="true"><span></span><span></span><span></span></div>
 
-  <!-- Fixed top bar -->
   <header class="topbar">
     <a href="#top" class="brand" data-nav>FIB<span>MIXX</span></a>
-    <nav class="topnav" aria-label="Sections">
-      <a href="#status" data-nav>Status</a>
-      <a href="#arsenal" data-nav>Arsenal</a>
-      <a href="#missions" data-nav>Missions</a>
-      <a href="#offduty" data-nav>Off Duty</a>
-    </nav>
+    <div class="topbar-right">
+      <nav class="topnav" aria-label="Sections">
+        <a href="#status" data-nav data-i18n="nav.status">Status</a>
+        <a href="#arsenal" data-nav data-i18n="nav.arsenal">Arsenal</a>
+        <a href="#missions" data-nav data-i18n="nav.missions">Missions</a>
+        <a href="#offduty" data-nav data-i18n="nav.offduty">Off Duty</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" lang="en" title="English">EN</button>
+        <button type="button" data-lang="es" lang="es" title="Español">ES</button>
+        <button type="button" data-lang="ca" lang="ca" title="Català">CA</button>
+        <button type="button" data-lang="ko" lang="ko" title="한국어">한</button>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -41,21 +48,21 @@
       </div>
 
       <div class="hero-inner">
-        <p class="kicker"><span>// Player file</span> 01</p>
+        <p class="kicker"><span data-i18n="hero.kicker">// Player file</span> 01</p>
         <h1 class="ransom" data-ransom="MARC" aria-label="Marc">MARC</h1>
         <p class="tagline">
-          <span class="tag-block">Informatics Engineering student</span>
-          <span class="tag-block alt">@ FIB · UPC — Barcelona</span>
+          <span class="tag-block" data-i18n="hero.role">Informatics Engineering student</span>
+          <span class="tag-block alt" data-i18n="hero.where">@ FIB · UPC — Barcelona</span>
         </p>
-        <p class="hero-copy">Passionate about <strong>software engineering</strong> and <strong>game development</strong>.</p>
+        <p class="hero-copy" data-i18n-html="hero.copy">Passionate about <strong>software engineering</strong> and <strong>game development</strong>.</p>
 
         <ul class="menu" role="menu" aria-label="Main menu">
-          <li role="none"><a role="menuitem" href="#status" data-nav><span class="num">01</span><span class="label">Status</span></a></li>
-          <li role="none"><a role="menuitem" href="#arsenal" data-nav><span class="num">02</span><span class="label">Arsenal</span></a></li>
-          <li role="none"><a role="menuitem" href="#missions" data-nav><span class="num">03</span><span class="label">Missions</span></a></li>
-          <li role="none"><a role="menuitem" href="#offduty" data-nav><span class="num">04</span><span class="label">Off Duty</span></a></li>
+          <li role="none"><a role="menuitem" href="#status" data-nav><span class="num">01</span><span class="label" data-i18n="nav.status">Status</span></a></li>
+          <li role="none"><a role="menuitem" href="#arsenal" data-nav><span class="num">02</span><span class="label" data-i18n="nav.arsenal">Arsenal</span></a></li>
+          <li role="none"><a role="menuitem" href="#missions" data-nav><span class="num">03</span><span class="label" data-i18n="nav.missions">Missions</span></a></li>
+          <li role="none"><a role="menuitem" href="#offduty" data-nav><span class="num">04</span><span class="label" data-i18n="nav.offduty">Off Duty</span></a></li>
         </ul>
-        <p class="hint" aria-hidden="true"><kbd>↑</kbd><kbd>↓</kbd> select &nbsp; <kbd>Enter</kbd> confirm</p>
+        <p class="hint" aria-hidden="true"><kbd>↑</kbd><kbd>↓</kbd> <span data-i18n="hero.select">select</span> &nbsp; <kbd>Enter</kbd> <span data-i18n="hero.confirm">confirm</span></p>
       </div>
     </section>
 
@@ -63,49 +70,47 @@
     <section id="status" class="panel panel-light">
       <div class="section-head">
         <span class="section-num">01</span>
-        <h2 class="ransom" data-ransom="STATUS">STATUS</h2>
+        <h2 class="ransom" data-ransom-key="title.status">STATUS</h2>
       </div>
 
       <div class="status-grid">
         <article class="card card-skew">
-          <h3>Journey</h3>
+          <h3 data-i18n="status.journey">Journey</h3>
           <ol class="timeline">
             <li>
-              <span class="tl-tag">Now</span>
+              <span class="tl-tag" data-i18n="status.now">Now</span>
               <div>
-                <strong>Software Engineering Student</strong>
-                <p>Facultat d'Informàtica de Barcelona — Universitat Politècnica de Catalunya.</p>
+                <strong data-i18n="status.j1.title">Software Engineering Student</strong>
+                <p data-i18n="status.j1.text">Facultat d'Informàtica de Barcelona — Universitat Politècnica de Catalunya.</p>
               </div>
             </li>
             <li>
-              <span class="tl-tag">5 mo</span>
+              <span class="tl-tag" data-i18n="status.months">5 mo</span>
               <div>
-                <strong>Web Developer</strong>
-                <p>Built with WordPress at inLab FIB.</p>
+                <strong data-i18n="status.j2.title">Web Developer</strong>
+                <p data-i18n="status.j2.text">Built with WordPress at inLab FIB.</p>
               </div>
             </li>
             <li>
-              <span class="tl-tag">Honors</span>
+              <span class="tl-tag" data-i18n="status.honors">Honors</span>
               <div>
-                <strong>Dual High School Diploma</strong>
-                <p>Spanish Scientific Baccalaureate (9.0/10 average) &amp; U.S. High School Diploma (3.79 GPA). Graduated with honors.</p>
+                <strong data-i18n="status.j3.title">Dual High School Diploma</strong>
+                <p data-i18n="status.j3.text">Spanish Scientific Baccalaureate (9.0/10 average) &amp; U.S. High School Diploma (3.79 GPA). Graduated with honors.</p>
               </div>
             </li>
           </ol>
         </article>
 
         <aside class="card card-dark idcard">
-          <div class="id-top">
-            <span>ID</span><span>FIBMIXX</span>
-          </div>
+          <div class="id-top"><span>ID</span><span>FIBMIXX</span></div>
           <dl>
-            <dt>Name</dt><dd>Marc</dd>
-            <dt>Class</dt><dd>Informatics Engineer (in training)</dd>
-            <dt>Base</dt><dd>Barcelona</dd>
-            <dt>Guild</dt><dd>FIB · UPC</dd>
-            <dt>Focus</dt><dd>Software Eng. · Game Dev</dd>
+            <dt data-i18n="id.name">Name</dt><dd>Marc</dd>
+            <dt data-i18n="id.class">Class</dt><dd data-i18n="id.classv">Informatics Engineer (in training)</dd>
+            <dt data-i18n="id.base">Base</dt><dd>Barcelona</dd>
+            <dt data-i18n="id.guild">Guild</dt><dd>FIB · UPC</dd>
+            <dt data-i18n="id.focus">Focus</dt><dd data-i18n="id.focusv">Software Eng. · Game Dev</dd>
           </dl>
-          <a class="btn" href="https://github.com/fibmixx" target="_blank" rel="noopener">View GitHub ↗</a>
+          <a class="btn" href="https://github.com/fibmixx" target="_blank" rel="noopener" data-i18n="id.github">View GitHub ↗</a>
         </aside>
       </div>
     </section>
@@ -114,29 +119,29 @@
     <section id="arsenal" class="panel panel-dark">
       <div class="section-head">
         <span class="section-num">02</span>
-        <h2 class="ransom" data-ransom="ARSENAL">ARSENAL</h2>
+        <h2 class="ransom" data-ransom-key="title.arsenal">ARSENAL</h2>
       </div>
 
       <div class="arsenal-grid">
         <div class="loadout">
-          <h3><span>Weapons</span> Programming &amp; Frameworks</h3>
+          <h3><span data-i18n="ars.weapons">Weapons</span> <b data-i18n="ars.prog">Programming &amp; Frameworks</b></h3>
           <ul class="chips">
             <li>C</li><li>C++</li><li>C#</li><li>Java</li><li>Python</li><li>MATLAB</li><li>OpenGL</li><li>SQL</li>
           </ul>
         </div>
         <div class="loadout">
-          <h3><span>Gear</span> Tools &amp; Software</h3>
+          <h3><span data-i18n="ars.gear">Gear</span> <b data-i18n="ars.tools">Tools &amp; Software</b></h3>
           <ul class="chips">
             <li>GitHub</li><li>Unity</li><li>IntelliJ</li><li>VS Code</li><li>Aseprite</li>
           </ul>
         </div>
         <div class="loadout">
-          <h3><span>Skills</span> Spoken Languages</h3>
+          <h3><span data-i18n="ars.skills">Skills</span> <b data-i18n="ars.langs">Spoken Languages</b></h3>
           <ul class="langs">
-            <li><span>Catalan</span><em>Native</em></li>
-            <li><span>Spanish</span><em>Native</em></li>
-            <li><span>English</span><em>Fluent</em></li>
-            <li><span>Korean</span><em>Learning</em></li>
+            <li><span data-i18n="lang.ca">Catalan</span><em data-i18n="lvl.native">Native</em></li>
+            <li><span data-i18n="lang.es">Spanish</span><em data-i18n="lvl.native">Native</em></li>
+            <li><span data-i18n="lang.en">English</span><em data-i18n="lvl.fluent">Fluent</em></li>
+            <li><span data-i18n="lang.ko">Korean</span><em data-i18n="lvl.learning">Learning</em></li>
           </ul>
         </div>
       </div>
@@ -146,101 +151,107 @@
     <section id="missions" class="panel panel-red">
       <div class="section-head">
         <span class="section-num">03</span>
-        <h2 class="ransom" data-ransom="MISSIONS">MISSIONS</h2>
+        <h2 class="ransom" data-ransom-key="title.missions">MISSIONS</h2>
       </div>
 
-      <div class="filters" role="tablist" aria-label="Filter missions">
-        <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-        <button class="filter" data-filter="personal" role="tab" aria-selected="false">Personal</button>
-        <button class="filter" data-filter="university" role="tab" aria-selected="false">University</button>
-        <button class="filter" data-filter="jam" role="tab" aria-selected="false">Game Jam</button>
+      <div class="filters" role="tablist" aria-label="Filter missions" data-group="missions">
+        <button class="filter active" data-filter="all" role="tab" aria-selected="true" data-i18n="f.all">All</button>
+        <button class="filter" data-filter="personal" role="tab" aria-selected="false" data-i18n="f.personal">Personal</button>
+        <button class="filter" data-filter="university" role="tab" aria-selected="false" data-i18n="f.university">University</button>
+        <button class="filter" data-filter="jam" role="tab" aria-selected="false" data-i18n="f.jam">Game Jam</button>
       </div>
 
       <div class="missions">
         <a class="mission" data-type="personal" href="https://github.com/fibmixx/Merlin" target="_blank" rel="noopener">
-          <span class="m-type">Personal</span>
+          <span class="m-type" data-i18n="m.personal">Personal</span>
           <h3>Merlin</h3>
-          <p>A desktop flashcard application to manage, organize, and practice custom vocabulary sets.</p>
+          <p data-i18n="m.merlin">A desktop flashcard application to manage, organize, and practice custom vocabulary sets.</p>
           <ul class="m-tags"><li>Python</li></ul>
         </a>
-
         <a class="mission" data-type="university" href="https://github.com/fibmixx/PROP-FIB-Hidato" target="_blank" rel="noopener">
-          <span class="m-type">University · PROP</span>
+          <span class="m-type"><span data-i18n="m.uni">University</span> · PROP</span>
           <h3>Hidato</h3>
-          <p>Java application for generating, validating and solving Hidatos. Includes game persistence, a scoring system and backtracking-based solving algorithms.</p>
+          <p data-i18n="m.hidato">Java application for generating, validating and solving Hidatos. Includes game persistence, a scoring system and backtracking-based solving algorithms.</p>
           <ul class="m-tags"><li>Java</li></ul>
         </a>
-
         <a class="mission" data-type="university" href="https://github.com/fibmixx/VC-FIB-Plate-Detection" target="_blank" rel="noopener">
-          <span class="m-type">University · VC</span>
-          <h3>Plate Detection</h3>
-          <p>A MATLAB image reader with OCR that detects and reads European plate numbers.</p>
+          <span class="m-type"><span data-i18n="m.uni">University</span> · VC</span>
+          <h3 data-i18n="m.plate.t">Plate Detection</h3>
+          <p data-i18n="m.plate">A MATLAB image reader with OCR that detects and reads European plate numbers.</p>
           <ul class="m-tags"><li>MATLAB</li></ul>
         </a>
-
         <a class="mission" data-type="university" href="https://github.com/fibmixx/VJ-FIB-Metal-Gear" target="_blank" rel="noopener">
-          <span class="m-type">University · VJ</span>
+          <span class="m-type"><span data-i18n="m.uni">University</span> · VJ</span>
           <h3>Metal Gear</h3>
-          <p>A recreation of the classic NES title Metal Gear, implemented from scratch using C++ and OpenGL.</p>
+          <p data-i18n="m.mg">A recreation of the classic NES title Metal Gear, implemented from scratch using C++ and OpenGL.</p>
           <ul class="m-tags"><li>C++</li><li>OpenGL</li><li>Aseprite</li></ul>
         </a>
-
         <a class="mission" data-type="university" href="https://github.com/fibmixx/VJ-FIB-Bloxorz" target="_blank" rel="noopener">
-          <span class="m-type">University · VJ</span>
+          <span class="m-type"><span data-i18n="m.uni">University</span> · VJ</span>
           <h3>Bloxorz</h3>
-          <p>A recreation of the browser game Bloxorz, implemented from scratch using C# and Unity.</p>
+          <p data-i18n="m.blox">A recreation of the browser game Bloxorz, implemented from scratch using C# and Unity.</p>
           <ul class="m-tags"><li>C#</li><li>Unity</li></ul>
         </a>
-
         <a class="mission" data-type="jam" href="https://github.com/albpb/BUBBLE-BANGO" target="_blank" rel="noopener">
           <span class="m-type">Global Game Jam 2025</span>
           <h3>Bubble Bango</h3>
-          <p>Created at the Global Game Jam 2025 held at UPC Barcelona. Theme: “Bubble”.</p>
+          <p data-i18n="m.bubble">Created at the Global Game Jam 2025 held at UPC Barcelona. Theme: “Bubble”.</p>
           <ul class="m-tags"><li>C#</li><li>Unity</li><li>Aseprite</li></ul>
         </a>
-
         <a class="mission" data-type="jam" href="https://github.com/M4xp0w3rg4m3s/MaskoTabasco" target="_blank" rel="noopener">
           <span class="m-type">Global Game Jam 2026</span>
           <h3>Mask'o Tabasco</h3>
-          <p>Created at the Global Game Jam 2026 held at UPC Barcelona. Theme: “Mask”.</p>
+          <p data-i18n="m.mask">Created at the Global Game Jam 2026 held at UPC Barcelona. Theme: “Mask”.</p>
           <ul class="m-tags"><li>C#</li><li>Unity</li><li>Aseprite</li></ul>
         </a>
       </div>
     </section>
 
-    <!-- ============ OFF DUTY ============ -->
-    <section id="offduty" class="panel panel-light">
+    <!-- ============ OFF DUTY (interactive favorites) ============ -->
+    <section id="offduty" class="panel panel-dark offduty">
       <div class="section-head">
         <span class="section-num">04</span>
-        <h2 class="ransom" data-ransom="OFF DUTY">OFF DUTY</h2>
+        <h2 class="ransom" data-ransom-key="title.offduty">OFF DUTY</h2>
+      </div>
+      <p class="od-intro" data-i18n="od.intro">My personal hall of fame. Pick a shelf, then pick a cover.</p>
+
+      <div class="filters od-filters" role="tablist" aria-label="Filter favorites" data-group="fav">
+        <button class="filter active" data-filter="all" role="tab" aria-selected="true" data-i18n="f.all">All</button>
+        <button class="filter" data-filter="music" role="tab" aria-selected="false" data-i18n="cat.music">Music</button>
+        <button class="filter" data-filter="games" role="tab" aria-selected="false" data-i18n="cat.games">Games</button>
+        <button class="filter" data-filter="reads" role="tab" aria-selected="false" data-i18n="cat.reads">Reads</button>
+        <button class="filter" data-filter="movies" role="tab" aria-selected="false" data-i18n="cat.movies">Movies</button>
+        <button class="filter" data-filter="series" role="tab" aria-selected="false" data-i18n="cat.series">Series</button>
       </div>
 
-      <div class="offduty-grid">
-        <div class="note note-a">
-          <h3>Main interests</h3>
-          <p>NMIXX, the Fate series and Pokémon.</p>
+      <div class="shelves" id="shelves"><!-- built by script.js --></div>
+
+      <dialog class="fav-dialog" id="favDialog" aria-labelledby="favTitle">
+        <div class="fd-inner">
+          <button class="fd-close" type="button" aria-label="Close">✕</button>
+          <div class="fd-cover"><img id="favImg" alt="" /></div>
+          <div class="fd-info">
+            <span class="fd-cat" id="favCat"></span>
+            <h3 id="favTitle"></h3>
+            <p class="fd-by" id="favBy"></p>
+            <p class="fd-count" id="favCount"></p>
+            <div class="fd-nav">
+              <button type="button" class="btn-ghost" data-step="-1">← <span data-i18n="od.prev">Prev</span></button>
+              <button type="button" class="btn-ghost" data-step="1"><span data-i18n="od.next">Next</span> →</button>
+            </div>
+          </div>
         </div>
-        <div class="note note-b">
-          <h3>Gamer</h3>
-          <p>JRPGs like Pokémon, Persona and Yakuza: Like a Dragon — plus multiplayer games like LoL and Overwatch.</p>
-        </div>
-        <div class="note note-c">
-          <h3>On repeat</h3>
-          <p>Mostly K-Pop, J-Pop and EDM. Favorites include NMIXX, AiNA THE END and underscores.</p>
-        </div>
-        <div class="note note-d">
-          <h3>Former athlete</h3>
-          <p>Used to play baseball competitively.</p>
-        </div>
-      </div>
+      </dialog>
     </section>
   </main>
 
   <footer class="footer">
-    <p class="ransom small" data-ransom="SEE YOU SOON">SEE YOU SOON</p>
+    <p class="ransom small" data-ransom-key="title.footer">SEE YOU SOON</p>
     <p><a href="https://github.com/fibmixx" target="_blank" rel="noopener">github.com/fibmixx</a> · © <span id="year">2026</span> Marc</p>
   </footer>
 
+  <script src="i18n.js"></script>
+  <script src="favorites.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
