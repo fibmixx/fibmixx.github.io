@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marc · fibmixx</title>
+  <meta name="description" content="Marc — Informatics Engineering student at FIB UPC (Barcelona). Software engineering & game development." />
+  <meta property="og:title" content="Marc · fibmixx" />
+  <meta property="og:description" content="Informatics Engineering student at FIB UPC, passionate about software engineering and game development." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,4 61,38 97,38 68,59 79,94 50,72 21,94 32,59 3,38 39,38' fill='%23e8102b'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Diagonal wipe used for section transitions -->
+  <div class="wipe" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- Fixed top bar -->
+  <header class="topbar">
+    <a href="#top" class="brand" data-nav>FIB<span>MIXX</span></a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#status" data-nav>Status</a>
+      <a href="#arsenal" data-nav>Arsenal</a>
+      <a href="#missions" data-nav>Missions</a>
+      <a href="#offduty" data-nav>Off Duty</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO / MAIN MENU ============ -->
+    <section id="top" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="burst"></div>
+        <div class="halftone"></div>
+        <div class="slash slash-1"></div>
+        <div class="slash slash-2"></div>
+      </div>
+
+      <div class="hero-inner">
+        <p class="kicker"><span>// Player file</span> 01</p>
+        <h1 class="ransom" data-ransom="MARC" aria-label="Marc">MARC</h1>
+        <p class="tagline">
+          <span class="tag-block">Informatics Engineering student</span>
+          <span class="tag-block alt">@ FIB · UPC — Barcelona</span>
+        </p>
+        <p class="hero-copy">Passionate about <strong>software engineering</strong> and <strong>game development</strong>.</p>
+
+        <ul class="menu" role="menu" aria-label="Main menu">
+          <li role="none"><a role="menuitem" href="#status" data-nav><span class="num">01</span><span class="label">Status</span></a></li>
+          <li role="none"><a role="menuitem" href="#arsenal" data-nav><span class="num">02</span><span class="label">Arsenal</span></a></li>
+          <li role="none"><a role="menuitem" href="#missions" data-nav><span class="num">03</span><span class="label">Missions</span></a></li>
+          <li role="none"><a role="menuitem" href="#offduty" data-nav><span class="num">04</span><span class="label">Off Duty</span></a></li>
+        </ul>
+        <p class="hint" aria-hidden="true"><kbd>↑</kbd><kbd>↓</kbd> select &nbsp; <kbd>Enter</kbd> confirm</p>
+      </div>
+    </section>
+
+    <!-- ============ STATUS ============ -->
+    <section id="status" class="panel panel-light">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2 class="ransom" data-ransom="STATUS">STATUS</h2>
+      </div>
+
+      <div class="status-grid">
+        <article class="card card-skew">
+          <h3>Journey</h3>
+          <ol class="timeline">
+            <li>
+              <span class="tl-tag">Now</span>
+              <div>
+                <strong>Software Engineering Student</strong>
+                <p>Facultat d'Informàtica de Barcelona — Universitat Politècnica de Catalunya.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-tag">5 mo</span>
+              <div>
+                <strong>Web Developer</strong>
+                <p>Built with WordPress at inLab FIB.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-tag">Honors</span>
+              <div>
+                <strong>Dual High School Diploma</strong>
+                <p>Spanish Scientific Baccalaureate (9.0/10 average) &amp; U.S. High School Diploma (3.79 GPA). Graduated with honors.</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <aside class="card card-dark idcard">
+          <div class="id-top">
+            <span>ID</span><span>FIBMIXX</span>
+          </div>
+          <dl>
+            <dt>Name</dt><dd>Marc</dd>
+            <dt>Class</dt><dd>Informatics Engineer (in training)</dd>
+            <dt>Base</dt><dd>Barcelona</dd>
+            <dt>Guild</dt><dd>FIB · UPC</dd>
+            <dt>Focus</dt><dd>Software Eng. · Game Dev</dd>
+          </dl>
+          <a class="btn" href="https://github.com/fibmixx" target="_blank" rel="noopener">View GitHub ↗</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ ARSENAL ============ -->
+    <section id="arsenal" class="panel panel-dark">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="ransom" data-ransom="ARSENAL">ARSENAL</h2>
+      </div>
+
+      <div class="arsenal-grid">
+        <div class="loadout">
+          <h3><span>Weapons</span> Programming &amp; Frameworks</h3>
+          <ul class="chips">
+            <li>C</li><li>C++</li><li>C#</li><li>Java</li><li>Python</li><li>MATLAB</li><li>OpenGL</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="loadout">
+          <h3><span>Gear</span> Tools &amp; Software</h3>
+          <ul class="chips">
+            <li>GitHub</li><li>Unity</li><li>IntelliJ</li><li>VS Code</li><li>Aseprite</li>
+          </ul>
+        </div>
+        <div class="loadout">
+          <h3><span>Skills</span> Spoken Languages</h3>
+          <ul class="langs">
+            <li><span>Catalan</span><em>Native</em></li>
+            <li><span>Spanish</span><em>Native</em></li>
+            <li><span>English</span><em>Fluent</em></li>
+            <li><span>Korean</span><em>Learning</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSIONS ============ -->
+    <section id="missions" class="panel panel-red">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="ransom" data-ransom="MISSIONS">MISSIONS</h2>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filter missions">
+        <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="personal" role="tab" aria-selected="false">Personal</button>
+        <button class="filter" data-filter="university" role="tab" aria-selected="false">University</button>
+        <button class="filter" data-filter="jam" role="tab" aria-selected="false">Game Jam</button>
+      </div>
+
+      <div class="missions">
+        <a class="mission" data-type="personal" href="https://github.com/fibmixx/Merlin" target="_blank" rel="noopener">
+          <span class="m-type">Personal</span>
+          <h3>Merlin</h3>
+          <p>A desktop flashcard application to manage, organize, and practice custom vocabulary sets.</p>
+          <ul class="m-tags"><li>Python</li></ul>
+        </a>
+
+        <a class="mission" data-type="university" href="https://github.com/fibmixx/PROP-FIB-Hidato" target="_blank" rel="noopener">
+          <span class="m-type">University · PROP</span>
+          <h3>Hidato</h3>
+          <p>Java application for generating, validating and solving Hidatos. Includes game persistence, a scoring system and backtracking-based solving algorithms.</p>
+          <ul class="m-tags"><li>Java</li></ul>
+        </a>
+
+        <a class="mission" data-type="university" href="https://github.com/fibmixx/VC-FIB-Plate-Detection" target="_blank" rel="noopener">
+          <span class="m-type">University · VC</span>
+          <h3>Plate Detection</h3>
+          <p>A MATLAB image reader with OCR that detects and reads European plate numbers.</p>
+          <ul class="m-tags"><li>MATLAB</li></ul>
+        </a>
+
+        <a class="mission" data-type="university" href="https://github.com/fibmixx/VJ-FIB-Metal-Gear" target="_blank" rel="noopener">
+          <span class="m-type">University · VJ</span>
+          <h3>Metal Gear</h3>
+          <p>A recreation of the classic NES title Metal Gear, implemented from scratch using C++ and OpenGL.</p>
+          <ul class="m-tags"><li>C++</li><li>OpenGL</li><li>Aseprite</li></ul>
+        </a>
+
+        <a class="mission" data-type="university" href="https://github.com/fibmixx/VJ-FIB-Bloxorz" target="_blank" rel="noopener">
+          <span class="m-type">University · VJ</span>
+          <h3>Bloxorz</h3>
+          <p>A recreation of the browser game Bloxorz, implemented from scratch using C# and Unity.</p>
+          <ul class="m-tags"><li>C#</li><li>Unity</li></ul>
+        </a>
+
+        <a class="mission" data-type="jam" href="https://github.com/albpb/BUBBLE-BANGO" target="_blank" rel="noopener">
+          <span class="m-type">Global Game Jam 2025</span>
+          <h3>Bubble Bango</h3>
+          <p>Created at the Global Game Jam 2025 held at UPC Barcelona. Theme: “Bubble”.</p>
+          <ul class="m-tags"><li>C#</li><li>Unity</li><li>Aseprite</li></ul>
+        </a>
+
+        <a class="mission" data-type="jam" href="https://github.com/M4xp0w3rg4m3s/MaskoTabasco" target="_blank" rel="noopener">
+          <span class="m-type">Global Game Jam 2026</span>
+          <h3>Mask'o Tabasco</h3>
+          <p>Created at the Global Game Jam 2026 held at UPC Barcelona. Theme: “Mask”.</p>
+          <ul class="m-tags"><li>C#</li><li>Unity</li><li>Aseprite</li></ul>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ OFF DUTY ============ -->
+    <section id="offduty" class="panel panel-light">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="ransom" data-ransom="OFF DUTY">OFF DUTY</h2>
+      </div>
+
+      <div class="offduty-grid">
+        <div class="note note-a">
+          <h3>Main interests</h3>
+          <p>NMIXX, the Fate series and Pokémon.</p>
+        </div>
+        <div class="note note-b">
+          <h3>Gamer</h3>
+          <p>JRPGs like Pokémon, Persona and Yakuza: Like a Dragon — plus multiplayer games like LoL and Overwatch.</p>
+        </div>
+        <div class="note note-c">
+          <h3>On repeat</h3>
+          <p>Mostly K-Pop, J-Pop and EDM. Favorites include NMIXX, AiNA THE END and underscores.</p>
+        </div>
+        <div class="note note-d">
+          <h3>Former athlete</h3>
+          <p>Used to play baseball competitively.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="ransom small" data-ransom="SEE YOU SOON">SEE YOU SOON</p>
+    <p><a href="https://github.com/fibmixx" target="_blank" rel="noopener">github.com/fibmixx</a> · © <span id="year">2026</span> Marc</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
